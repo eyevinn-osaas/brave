@@ -32,7 +32,7 @@ def api_host():
 def api_port():
     if 'PORT' in os.environ:
         return int(os.environ['PORT'])
-    return c['api_port'] if 'api_port' in c else 5000
+    return c['api_port'] if 'api_port' in c else 8080
 
 
 def enable_audio():

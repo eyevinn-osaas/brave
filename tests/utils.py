@@ -2,7 +2,7 @@ import subprocess, sys, time, tempfile, yaml, os, requests, pytest, signal, json
 from PIL import Image
 
 brave_processes = {}
-DEFAULT_PORT=5000
+DEFAULT_PORT=8080
 
 @pytest.fixture #(scope="module")
 def run_brave(config_file=None, port=None):
